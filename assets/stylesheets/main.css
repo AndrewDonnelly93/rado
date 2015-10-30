@@ -1,0 +1,562 @@
+@font-face {
+  font-family: 'HelveticaNeueCyr-Bold';
+  src: url("../fonts/HelveticaNeueCyr-Bold.eot") format("embedded-opentype");
+  src: url("../fonts/HelveticaNeueCyr-Bold.eot");
+  src: url("../fonts/HelveticaNeueCyr-Bold.eot") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Light';
+  src: url("../fonts/HelveticaNeueCyr-Light.eot") format("embedded-opentype");
+  src: url("../fonts/HelveticaNeueCyr-Light.eot");
+  src: url("../fonts/HelveticaNeueCyr-Light.eot") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Light.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Light.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Roman';
+  src: url("../fonts/HelveticaNeueCyr-Roman.eot") format("embedded-opentype");
+  src: url("../fonts/HelveticaNeueCyr-Roman.eot");
+  src: url("../fonts/HelveticaNeueCyr-Roman.eot") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Roman.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Roman.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Medium';
+  src: url("../fonts/HelveticaNeueCyr-Medium.eot") format("embedded-opentype");
+  src: url("../fonts/HelveticaNeueCyr-Medium.eot");
+  src: url("../fonts/HelveticaNeueCyr-Medium.eot") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Medium.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Medium.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Thin';
+  src: url("../fonts/HelveticaNeueCyr-Thin.eot") format("embedded-opentype");
+  src: url("../fonts/HelveticaNeueCyr-Thin.eot");
+  src: url("../fonts/HelveticaNeueCyr-Thin.eot") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Thin.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Thin.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Thin.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.how-we-work .steps-list li .step-name {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.clearfix:after {
+  display: table;
+  content: '';
+  clear: both; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  min-width: 1349px;
+  text-align: center;
+  font-family: "HelveticaNeueCyr-Light", sans-serif;
+  font-size: 18px;
+  color: white; }
+
+.max-wrapper {
+  margin: 0 auto;
+  width: 1349px;
+  position: relative; }
+
+.middle-wrapper {
+  margin: 0 auto;
+  width: 1234px;
+  position: relative; }
+
+header {
+  background: #2e2f31;
+  padding-top: 26px;
+  padding-bottom: 31px; }
+
+.watch-logo {
+  float: left;
+  width: 48px;
+  height: 48px;
+  background: url("../images/sprite/sprite.png") 0 -63px no-repeat; }
+
+.menu-contacts-block {
+  position: relative; }
+
+.contacts {
+  float: right;
+  text-align: right;
+  position: relative;
+  top: 2px; }
+  .contacts .work-hours {
+    font-size: 14px;
+    color: #70777c; }
+  .contacts .phone {
+    padding-top: 7px;
+    margin-bottom: 9px;
+    font-size: 24px;
+    color: white; }
+
+.text-block {
+  color: #2e2f31;
+  font-size: 36px;
+  line-height: 1.2; }
+
+.middle-text-block {
+  font-size: 30px;
+  line-height: 1.2;
+  color: #2e2f31; }
+
+.small-text-block {
+  color: #2e2f31;
+  font-family: "HelveticaNeueCyr-Thin", sans-serif;
+  font-size: 24px;
+  line-height: 1.2; }
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: #7f7f7f; }
+
+.main-menu-container {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  display: block; }
+  .main-menu-container .main-menu {
+    max-width: 960px;
+    display: block;
+    margin: 0 auto; }
+    .main-menu-container .main-menu li {
+      display: inline-block;
+      padding-right: 52px;
+      padding-bottom: 10px; }
+      .main-menu-container .main-menu li:last-child {
+        padding-right: 0; }
+      .main-menu-container .main-menu li a {
+        text-decoration: none;
+        display: block;
+        color: #70777c; }
+        .main-menu-container .main-menu li a:hover, .main-menu-container .main-menu li a.active {
+          color: white; }
+
+.big-header {
+  font-family: "HelveticaNeueCyr-Thin", sans-serif;
+  font-size: 60px;
+  color: white;
+  line-height: 1.2; }
+
+.middle-header {
+  color: #2e2f31;
+  font-size: 60px;
+  line-height: 1.2; }
+
+.btn {
+  display: block;
+  width: 296px;
+  height: 67px;
+  background: url("../images/btn.png") 0 0 no-repeat;
+  text-decoration: none;
+  text-align: center;
+  line-height: 68px;
+  font-size: 18px;
+  color: white; }
+
+.order {
+  padding-top: 67px;
+  background: url("../images/blue-bg.png") center 0 no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%; }
+  .order .big-header {
+    display: block;
+    margin: 0 auto 103px;
+    max-width: 880px; }
+  .order .order-watch .watch-pic {
+    float: left;
+    width: 240px;
+    height: 580px;
+    background: url("../images/clock.png") 0 0 no-repeat;
+    margin-right: 96px; }
+  .order .order-watch .watch-information {
+    float: left;
+    max-width: 426px;
+    text-align: left; }
+    .order .order-watch .watch-information .watch-logo {
+      position: relative;
+      right: -1px;
+      width: 263px;
+      height: 83px;
+      background: url("../images/rado.png") 0 0 no-repeat;
+      margin-bottom: 48px; }
+    .order .order-watch .watch-information .watch-name {
+      color: #158ac4;
+      margin-bottom: -1px;
+      line-height: 1.2;
+      font-family: "HelveticaNeueCyr-Bold", sans-serif;
+      font-size: 36px; }
+    .order .order-watch .watch-information .watch-description {
+      font-family: "HelveticaNeueCyr-Thin", sans-serif;
+      font-size: 24px;
+      line-height: 1.2;
+      margin-bottom: 57px; }
+    .order .order-watch .watch-information .watch-price {
+      font-family: "HelveticaNeueCyr-Bold", sans-serif;
+      font-size: 45px;
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin-bottom: 28px; }
+    .order .order-watch .watch-information .btn {
+      display: inline-block; }
+  .order .order-watch .watch-gallery {
+    float: right;
+    width: 201px;
+    margin-bottom: 68px; }
+    .order .order-watch .watch-gallery li {
+      display: block;
+      width: 201px;
+      height: 202px;
+      margin-bottom: 9px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background: #141414;
+      background: rgba(20, 20, 20, 0.27);
+      position: relative; }
+      .order .order-watch .watch-gallery li:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        display: block; }
+      .order .order-watch .watch-gallery li:hover {
+        background: rgba(20, 20, 20, 0.35); }
+        .order .order-watch .watch-gallery li:hover:before {
+          border: 2px solid #b8f6ff; }
+      .order .order-watch .watch-gallery li:last-child {
+        margin-bottom: 0; }
+      .order .order-watch .watch-gallery li a {
+        position: relative;
+        display: block;
+        width: 201px;
+        height: 202px; }
+      .order .order-watch .watch-gallery li img {
+        padding-top: 22px;
+        display: block;
+        margin: 0 auto;
+        width: 80px;
+        height: 148px; }
+
+.advantages {
+  padding-top: 71px; }
+  .advantages .middle-header {
+    margin-bottom: 104px; }
+  .advantages .advantages-list {
+    list-style: none;
+    margin-bottom: 61px; }
+    .advantages .advantages-list li {
+      position: relative;
+      margin-bottom: 20px;
+      width: 288px;
+      float: left;
+      text-align: left; }
+      .advantages .advantages-list li:nth-child(2n) {
+        margin-left: 176px; }
+      .advantages .advantages-list li:nth-child(3n) {
+        float: right; }
+      .advantages .advantages-list li .pic {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url("../images/sprite/sprite.png") 0 0 no-repeat; }
+      .advantages .advantages-list li .advantage-name {
+        padding-top: 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 66px;
+        font-family: "HelveticaNeueCyr-Roman", sans-serif;
+        font-size: 24px;
+        color: #2e2f31;
+        line-height: 1.2; }
+      .advantages .advantages-list li .advantage-description {
+        margin-top: 20px;
+        color: #2e2f31;
+        line-height: 1.2; }
+      .advantages .advantages-list li.free-ship .pic {
+        top: 4px;
+        left: 6px;
+        width: 41px;
+        height: 61px;
+        background-position: -112px 0; }
+      .advantages .advantages-list li.belgium .pic {
+        top: 5px;
+        left: 4px;
+        width: 53px;
+        height: 61px;
+        background-position: 0 0; }
+      .advantages .advantages-list li.hours .advantage-name {
+        padding-left: 70px; }
+      .advantages .advantages-list li.hours .pic {
+        top: 15px;
+        width: 55px;
+        height: 46px;
+        background-position: -55px 0; }
+
+.watch-details {
+  padding-top: 63px; }
+  .watch-details .middle-header {
+    margin-bottom: 100px; }
+  .watch-details .table-clock {
+    float: left;
+    margin-top: 93px;
+    width: 347px;
+    height: 554px;
+    background: url("../images/table-clock.png") 0 0 no-repeat; }
+  .watch-details .watch-characteristics {
+    border: 0;
+    float: right;
+    width: 752px;
+    text-align: left; }
+    .watch-details .watch-characteristics td {
+      line-height: 1.2;
+      font-size: 24px;
+      padding-bottom: 32px; }
+      .watch-details .watch-characteristics td:first-child {
+        width: 269px;
+        color: #647e85;
+        font-family: "HelveticaNeueCyr-Bold", sans-serif; }
+      .watch-details .watch-characteristics td:nth-child(2) {
+        color: #333333; }
+      .watch-details .watch-characteristics td.price {
+        font-size: 36px;
+        text-transform: uppercase; }
+  .watch-details .btn {
+    float: right;
+    margin-right: 458px;
+    margin-top: 1px;
+    margin-bottom: 112px; }
+
+.faq {
+  position: relative;
+  margin-top: 84px; }
+  .faq .faq-container {
+    position: relative; }
+  .faq .questions-list {
+    margin-top: 176px;
+    float: left;
+    width: 830px;
+    list-style: none;
+    margin-bottom: 160px;
+    font-family: "HelveticaNeueCyr-Thin", sans-serif;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #2e2f31; }
+    @media (min-width: 1920px) {
+      .faq .questions-list {
+        margin-top: 156px; } }
+    @media (min-width: 1920px) {
+      .faq .questions-list {
+        width: 100%; } }
+    .faq .questions-list span {
+      text-transform: uppercase;
+      font-family: "HelveticaNeueCyr-Bold", sans-serif; }
+    .faq .questions-list .send-request {
+      color: #2e2f31; }
+    .faq .questions-list li {
+      display: block;
+      width: 750px;
+      text-align: left;
+      margin-bottom: 125px; }
+      .faq .questions-list li:nth-child(odd) {
+        float: left; }
+      .faq .questions-list li:nth-child(even) {
+        float: right; }
+      .faq .questions-list li .question {
+        max-width: 678px;
+        padding-bottom: 36px; }
+      .faq .questions-list li .answer {
+        max-width: 678px; }
+      @media (min-width: 1920px) {
+        .faq .questions-list li {
+          margin-bottom: 112px; } }
+      .faq .questions-list li:last-child {
+        margin-bottom: 0; }
+  .faq .watch-image {
+    position: absolute;
+    right: 0;
+    top: -36px;
+    width: 347px;
+    height: 781px;
+    background: url("../images/side-clock.png") 0 0 no-repeat; }
+    @media (min-width: 1920px) {
+      .faq .watch-image {
+        position: absolute;
+        float: none;
+        right: -347px;
+        top: 0; } }
+  .faq .block-wrapper {
+    margin-bottom: 96px; }
+  .faq .text-block {
+    display: inline-block;
+    line-height: 67px; }
+  .faq .btn {
+    margin-left: 32px;
+    display: inline-block;
+    position: relative;
+    top: -4px; }
+
+.large-watch-gallery {
+  width: 100%;
+  margin-top: 84px;
+  margin-bottom: 109px; }
+  .large-watch-gallery .middle-header {
+    margin-bottom: 90px; }
+  .large-watch-gallery .large-watch-list {
+    width: 100%;
+    list-style: none; }
+    .large-watch-gallery .large-watch-list li {
+      display: inline-block;
+      width: 33.3%;
+      height: auto;
+      margin-top: -4px; }
+      .large-watch-gallery .large-watch-list li a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+      .large-watch-gallery .large-watch-list li img {
+        display: block;
+        width: 100%;
+        height: 100%; }
+
+.how-we-work .steps-list li {
+  width: 380px;
+  margin-right: 115px; }
+  .how-we-work .steps-list li .step-name {
+    padding-bottom: 18px;
+    width: 290px;
+    color: #299bd7;
+    font-family: "HelveticaNeueCyr-Medium", sans-serif;
+    font-size: 30px; }
+  .how-we-work .steps-list li .step-description {
+    width: 290px;
+    line-height: 1.2;
+    color: #2e2f31;
+    font-size: 18px; }
+
+.how-we-work .steps-list li:nth-child(3n), .how-we-work .steps-list li:last-child {
+  width: 243px;
+  margin-right: 0; }
+  .how-we-work .steps-list li:nth-child(3n):before, .how-we-work .steps-list li:last-child:before {
+    display: none; }
+  .how-we-work .steps-list li:nth-child(3n) .step-name, .how-we-work .steps-list li:last-child .step-name {
+    width: 100%; }
+  .how-we-work .steps-list li:nth-child(3n) .step-description, .how-we-work .steps-list li:last-child .step-description {
+    width: 100%; }
+
+.how-we-work {
+  text-align: center; }
+  .how-we-work .middle-header {
+    margin-bottom: 70px; }
+  .how-we-work .small-text-block {
+    margin: 0 auto 116px;
+    max-width: 545px; }
+  .how-we-work .steps-list {
+    display: block;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 31px; }
+    .how-we-work .steps-list li {
+      text-align: left;
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 142px;
+      position: relative; }
+      .how-we-work .steps-list li:before {
+        position: absolute;
+        right: 0;
+        top: 21px;
+        content: "";
+        display: block;
+        width: 21px;
+        height: 38px;
+        background: url("../images/sprite/sprite.png") -155px -44px no-repeat; }
+
+footer {
+  background: whitesmoke;
+  padding-top: 79px;
+  padding-bottom: 60px; }
+  footer .menu-contacts-block {
+    margin-top: 74px; }
+  footer .watch-logo {
+    background-position: -149px -103px; }
+  footer .block-wrapper {
+    margin-bottom: 79px; }
+    footer .block-wrapper .middle-text-block {
+      display: inline-block;
+      text-align: right;
+      max-width: 450px;
+      vertical-align: top;
+      margin-right: 80px; }
+    footer .block-wrapper .btn {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: 19px; }
+  footer .shop-name {
+    float: left;
+    text-align: left;
+    margin-left: 20px; }
+    footer .shop-name .name {
+      color: #1a8ec9;
+      font-size: 24px;
+      margin-bottom: 13px; }
+    footer .shop-name .description {
+      color: #333333;
+      font-size: 18px; }
+  footer .main-menu-container .main-menu li a {
+    color: #70777c; }
+    footer .main-menu-container .main-menu li a:hover, footer .main-menu-container .main-menu li a.active {
+      color: black; }
+  footer .contacts .work-hours {
+    color: #70777c; }
+  footer .contacts .phone {
+    color: #1a8ec9; }
+  footer .social-network {
+    margin-top: 79px;
+    margin-bottom: 70px; }
+  footer .developers {
+    color: #333333; }
+    footer .developers span {
+      font-family: "HelveticaNeueCyr-Bold", sans-serif; }
+
+.social-network .social-description {
+  display: inline-block;
+  margin-right: 30px;
+  padding-top: 10px;
+  color: #333333; }
+.social-network .social-list {
+  display: inline-block; }
+  .social-network .social-list li {
+    display: inline-block;
+    margin-right: 10px;
+    width: 42px;
+    height: 42px; }
+    .social-network .social-list li:last-child {
+      margin-top: 0; }
+    .social-network .social-list li .social-btn {
+      width: 42px;
+      height: 42px;
+      display: block;
+      background: url("../images/sprite/sprite.png") 0 0 no-repeat; }
+      .social-network .social-list li .social-btn.vk {
+        background-position: -155px 0; }
+      .social-network .social-list li .social-btn.inst {
+        background-position: -94px -63px; }
+      .social-network .social-list li .social-btn.fb {
+        background-position: -50px -63px; }

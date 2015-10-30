@@ -1,0 +1,703 @@
+$max-wrapper-w: 1349px;
+$middle-wrapper-w: 1234px;
+$black: #2e2f31;
+$dark-black: rgb(51, 51, 51);
+$light-gray: rgb(112, 119, 124);
+$footer-bg: #f5f5f5;
+$base-color: #fff;
+$watch-logo-size: 48px;
+$big-watch-w: 240px;
+$big-watch-h: 580px;
+$manufacturer-logo-w: 263px;
+$manufacturer-logo-h: 83px;
+$blue: rgb(21, 138, 196);
+$middle-blue: rgb(26, 142, 201);
+$dark-blue: rgb(41, 155, 215);
+$btn-w: 296px;
+$btn-h: 67px;
+$gray: rgb(100, 126, 133);
+$light-blue: rgb(17, 147, 212);
+$gallery-clock-square-w: 201px;
+$gallery-clock-square-h: 202px;
+$gallery-clock-w: 80px;
+$gallery-clock-h: 148px;
+$line-color: #7f7f7f;
+$table-clock-w: 347px;
+$table-clock-h: 554px;
+$watch-characteristics-w: 752px;
+$watch-characteristics-first-cell-w: 269px;
+$faq-watch-w: 347px;
+$faq-watch-h: 781px;
+$large-screen-w: 1920px;
+$question-answer-max-w: 678px;
+$step-list-item-w: 380px;
+$step-list-last-item-w: 243px;
+$step-list-item-max-text-w: 290px;
+$step-arrow-w: 21px;
+$step-arrow-h: 38px;
+$social-list-item-size: 42px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  min-width: $max-wrapper-w;
+  text-align: center;
+  font: {
+    family: "HelveticaNeueCyr-Light", sans-serif;
+    size: 18px;
+  }
+  color: $base-color;
+}
+
+.max-wrapper {
+  margin: 0 auto;
+  width: $max-wrapper-w;
+  position: relative;
+}
+
+.middle-wrapper {
+  margin: 0 auto;
+  width: $middle-wrapper-w;
+  position: relative;
+}
+
+header {
+  background: $black;
+  padding-top: 26px;
+  padding-bottom: 31px;
+}
+
+.watch-logo {
+  float: left;
+  @include size($watch-logo-size,$watch-logo-size);
+  background: url("../images/sprite/sprite.png") 0 -63px no-repeat;
+}
+
+.menu-contacts-block {
+  position: relative;
+}
+
+.contacts {
+  float: right;
+  text-align: right;
+  position: relative;
+  top: 2px;
+  .work-hours {
+    font-size: 14px;
+    color: $light-gray;
+  }
+  .phone {
+    padding-top: 7px;
+    margin-bottom: 9px;
+    font-size: 24px;
+    color: $base-color;
+  }
+}
+
+.text-block {
+  color: $black;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.middle-text-block {
+  font-size: 30px;
+  line-height: 1.2;
+  color: $black;
+}
+
+.small-text-block {
+  color: $black;
+  font:
+  {
+    family: "HelveticaNeueCyr-Thin", sans-serif;
+    size: 24px;
+  }
+  line-height: 1.2;
+}
+
+.line {
+  @include size(100%,1px);
+  background: $line-color;
+}
+
+.main-menu-container {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  display: block;
+  .main-menu {
+    max-width: 960px;
+    display: block;
+    margin: 0 auto;
+    li {
+      display: inline-block;
+      padding-right: 52px;
+      padding-bottom: 10px;
+      &:last-child {
+        padding-right: 0;
+      }
+      a {
+        text-decoration: none;
+        display: block;
+        color: $light-gray;
+        &:hover,
+        &.active {
+          color: $base-color;
+        }
+      }
+    }
+  }
+}
+
+.big-header {
+  font: {
+    family: "HelveticaNeueCyr-Thin", sans-serif;
+    size: 60px;
+  }
+  color: $base-color;
+  line-height: 1.2;
+}
+
+.middle-header {
+  color: $black;
+  font-size: 60px;
+  line-height: 1.2;
+}
+
+.btn {
+  display: block;
+  @include size($btn-w,$btn-h);
+  background: url("../images/btn.png") 0 0 no-repeat;
+  text-decoration: none;
+  text-align: center;
+  line-height: $btn-h + 1;
+  font-size: 18px;
+  color: $base-color;
+}
+
+.order {
+  padding-top: 67px;
+  background: url("../images/blue-bg.png") center 0 no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  .big-header {
+    display: block;
+    margin: 0 auto 103px;
+    max-width: 880px;
+  }
+  .order-watch {
+    .watch-pic {
+      float: left;
+      @include size($big-watch-w,$big-watch-h);
+      background: url("../images/clock.png") 0 0 no-repeat;
+      margin-right: 96px;
+    }
+    .watch-information {
+      float: left;
+      max-width: 426px;
+      text-align: left;
+      .watch-logo {
+        position: relative;
+        right: -1px;
+        @include size($manufacturer-logo-w,$manufacturer-logo-h);
+        background: url("../images/rado.png") 0 0 no-repeat;
+        margin-bottom: 48px;
+      }
+      .watch-name {
+        color: $blue;
+        margin-bottom: -1px;
+        line-height: 1.2;
+        font: {
+          family: "HelveticaNeueCyr-Bold", sans-serif;
+          size: 36px;
+        }
+      }
+      .watch-description {
+        font: {
+          family: "HelveticaNeueCyr-Thin", sans-serif;
+          size: 24px;
+        }
+        line-height: 1.2;
+        margin-bottom: 57px;
+      }
+      .watch-price {
+        font: {
+          family: "HelveticaNeueCyr-Bold", sans-serif;
+          size: 45px;
+        }
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin-bottom: 28px;
+      }
+      .btn {
+        display: inline-block;
+      }
+    }
+    .watch-gallery {
+      float: right;
+      width: $gallery-clock-square-w;
+      li {
+        display: block;
+        @include size($gallery-clock-square-w,$gallery-clock-square-h);
+        margin-bottom: 9px;
+        @include border-box;
+        background: rgb(20, 20, 20);
+        background: rgba(20, 20, 20, .27);
+        position: relative;
+        &:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          content: "";
+          display: block;
+        }
+        &:hover {
+          background: rgba(20, 20, 20, .35);
+          &:before {
+            border: 2px solid rgb(184, 246, 255);
+          }
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a {
+          position: relative;
+          display: block;
+          @include size($gallery-clock-square-w,$gallery-clock-square-h);
+        }
+        img {
+          padding-top: 22px;
+          display: block;
+          margin: 0 auto;
+          @include size($gallery-clock-w,$gallery-clock-h);
+        }
+      }
+      margin-bottom: 68px;
+    }
+  }
+}
+
+.advantages {
+  padding-top: 71px;
+  .middle-header {
+    margin-bottom: 104px;
+  }
+  .advantages-list {
+    list-style: none;
+    li {
+      position: relative;
+      margin-bottom: 20px;
+      width: 288px;
+      float: left;
+      text-align: left;
+      &:nth-child(2n) {
+        margin-left: 176px;
+      }
+      &:nth-child(3n) {
+        float: right;
+      }
+      .pic {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url("../images/sprite/sprite.png") 0 0 no-repeat;
+      }
+      .advantage-name {
+        padding-top: 10px;
+        @include border-box;
+        padding-left: 66px;
+        font: {
+          family: "HelveticaNeueCyr-Roman", sans-serif;
+          size: 24px;
+        }
+        color: $black;
+        line-height: 1.2;
+      }
+      .advantage-description {
+        margin-top: 20px;
+        color: $black;
+        line-height: 1.2;
+      }
+      &.free-ship {
+        .pic {
+          top: 4px;
+          left: 6px;
+          @include size(41px,61px);
+          background-position: -112px 0;
+        }
+      }
+      &.belgium {
+        .pic {
+          top: 5px;
+          left: 4px;
+          @include size(53px,61px);
+          background-position: 0 0;
+        }
+      }
+      &.hours {
+        .advantage-name {
+          padding-left: 70px;
+        }
+        .pic {
+          top: 15px;
+          @include size(55px,46px);
+          background-position: -55px 0;
+        }
+      }
+    }
+    margin-bottom: 61px;
+  }
+}
+
+.watch-details {
+  padding-top: 63px;
+  .middle-header {
+    margin-bottom: 100px;
+  }
+  .table-clock {
+    float: left;
+    margin-top: 93px;
+    @include size($table-clock-w, $table-clock-h);
+    background: url("../images/table-clock.png") 0 0 no-repeat;
+  }
+  .watch-characteristics {
+    border: 0;
+    float: right;
+    width: $watch-characteristics-w;
+    text-align: left;
+    td {
+      line-height: 1.2;
+      font-size: 24px;
+      padding-bottom: 32px;
+      &:first-child {
+        width: $watch-characteristics-first-cell-w;
+        color: $gray;
+        font: {
+          family: "HelveticaNeueCyr-Bold", sans-serif;
+        }
+      }
+      &:nth-child(2) {
+        color: $dark-black;
+      }
+      &.price {
+        font-size: 36px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .btn {
+    float: right;
+    margin-right: 458px;
+    margin-top: 1px;
+    margin-bottom: 112px;
+  }
+}
+
+
+.faq {
+  position: relative;
+  margin-top: 84px;
+  .faq-container {
+    position: relative;
+  }
+  .questions-list {
+    margin-top: 176px;
+    @media (min-width: $large-screen-w) {
+      margin-top: 156px;
+    }
+    float: left;
+    width: 830px;
+    list-style: none;
+    margin-bottom: 160px;
+    @media (min-width: $large-screen-w) {
+      width: 100%;
+    }
+    font: {
+      family: "HelveticaNeueCyr-Thin", sans-serif;
+      size: 24px;
+    }
+    line-height: 1.2;
+    color: $black;
+    span {
+      text-transform: uppercase;
+      font: {
+        family: "HelveticaNeueCyr-Bold", sans-serif;
+      }
+    }
+    .send-request {
+      color: $black;
+    }
+    li {
+      display: block;
+      width: 750px;
+      text-align: left;
+      &:nth-child(odd) {
+        float: left;
+      }
+      &:nth-child(even) {
+        float: right;
+      }
+      .question {
+        max-width: $question-answer-max-w;
+        padding-bottom: 36px;
+      }
+      .answer {
+        max-width: $question-answer-max-w;
+      }
+      margin-bottom: 125px;
+      @media (min-width: $large-screen-w) {
+        margin-bottom: 112px;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .watch-image {
+    position: absolute;
+    right: 0;
+    top: -36px;
+    @include size($faq-watch-w,$faq-watch-h);
+    background: url("../images/side-clock.png") 0 0 no-repeat;
+    @media (min-width: $large-screen-w) {
+      position: absolute;
+      float: none;
+      right: - $faq-watch-w;
+      top: 0;
+    }
+  }
+  .block-wrapper {
+    margin-bottom: 96px;
+  }
+  .text-block {
+    display: inline-block;
+    line-height: $btn-h;
+  }
+  .btn {
+    margin-left: 32px;
+    display: inline-block;
+    position: relative;
+    top: -4px;
+  }
+}
+
+.large-watch-gallery {
+  width: 100%;
+  margin-top: 84px;
+  margin-bottom: 109px;
+  .middle-header {
+    margin-bottom: 90px;
+  }
+  .large-watch-list {
+    width: 100%;
+    list-style: none;
+    li {
+      display: inline-block;
+      width: 33.3%;
+      height: auto;
+      margin-top: -4px;
+      a {
+        display: block;
+        @include size(100%,100%);
+      }
+      img {
+        display: block;
+        @include size(100%,100%);
+      }
+    }
+  }
+}
+
+%step-block {
+  width: $step-list-item-w;
+  margin-right: 115px;
+  .step-name {
+    @extend %text-overflow;
+    padding-bottom: 18px;
+    width: $step-list-item-max-text-w;
+    color: $dark-blue;
+    font: {
+      family: "HelveticaNeueCyr-Medium", sans-serif;
+      size: 30px;
+    }
+  }
+  .step-description {
+    width: $step-list-item-max-text-w;
+    line-height: 1.2;
+    color: $black;
+    font-size: 18px;
+  }
+}
+
+%step-last {
+  &:before {
+    display: none;
+  }
+  width: $step-list-last-item-w;
+  margin-right: 0;
+  .step-name {
+    width: 100%;
+  }
+  .step-description {
+    width: 100%;
+  }
+}
+
+.how-we-work {
+  text-align: center;
+  .middle-header {
+    margin-bottom: 70px;
+  }
+  .small-text-block {
+    margin: 0 auto 116px;
+    max-width: 545px;
+  }
+  .steps-list {
+    display: block;
+    list-style: none;
+    text-align: center;
+    li {
+      text-align: left;
+      display: inline-block;
+      vertical-align: top;
+      @extend %step-block;
+      margin-bottom: 142px;
+      position: relative;
+      &:before {
+        position: absolute;
+        right: 0;
+        top: 21px;
+        content: "";
+        display: block;
+        @include size($step-arrow-w,$step-arrow-h);
+        background: url("../images/sprite/sprite.png") -155px -44px no-repeat;
+      }
+      &:nth-child(3n) {
+       @extend %step-last;
+      }
+      &:last-child {
+        @extend %step-last;
+      }
+    }
+    margin-bottom: 31px;
+  }
+}
+
+footer {
+  background: $footer-bg;
+  padding-top: 79px;
+  padding-bottom: 60px;
+  .menu-contacts-block {
+    margin-top: 74px;
+  }
+  .watch-logo {
+    background-position: -149px -103px;
+  }
+  .block-wrapper {
+    .middle-text-block {
+      display: inline-block;
+      text-align: right;
+      max-width: 450px;
+      vertical-align: top;
+      margin-right: 80px;
+    }
+    .btn {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: 19px;
+    }
+    margin-bottom: 79px;
+  }
+  .shop-name {
+    float: left;
+    text-align: left;
+    margin-left: 20px;
+    .name {
+      color: $middle-blue;
+      font-size: 24px;
+      margin-bottom: 13px;
+    }
+    .description {
+      color: $dark-black;
+      font-size: 18px;
+    }
+  }
+  .main-menu-container {
+    .main-menu {
+      li {
+        a {
+          color: $light-gray;
+          &:hover,
+          &.active {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  .contacts {
+    .work-hours {
+      color: $light-gray;
+    }
+    .phone {
+      color: $middle-blue;
+    }
+  }
+  .social-network {
+    margin-top: 79px;
+    margin-bottom: 70px;
+  }
+  .developers {
+    color: $dark-black;
+    span {
+      font: {
+        family: "HelveticaNeueCyr-Bold", sans-serif;
+      }
+    }
+  }
+}
+
+.social-network {
+  .social-description {
+    display: inline-block;
+    margin-right: 30px;
+    padding-top: 10px;
+    color: $dark-black;
+  }
+  .social-list {
+    display: inline-block;
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      @include size($social-list-item-size,$social-list-item-size);
+      &:last-child {
+        margin-top: 0;
+      }
+      .social-btn {
+        @include size($social-list-item-size,$social-list-item-size);
+        display: block;
+        background: url("../images/sprite/sprite.png") 0 0 no-repeat;
+        &.vk {
+          background-position: -155px 0;
+        }
+        &.inst {
+          background-position: -94px -63px;
+        }
+        &.fb {
+          background-position: -50px -63px;
+        }
+      }
+    }
+  }
+}
+

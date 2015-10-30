@@ -1,0 +1,199 @@
+header #2e2f31
+/* Base style */
+font-family: "HelveticaNeueCyr";
+font-size: 18px;
+font-weight: 300;
+
+/* Style for главная" рhover */
+color: rgb(255, 255, 255);
+
+/* Style for остальные " */
+color: rgb(112, 119, 124);
+
+Главная        Преимущества        Вопросы        Преимущества Вопросы
+
+/* Base style работаем */
+color: rgb(112, 119, 124);
+font-family: "HelveticaNeueCyr";
+font-size: 14px;
+font-weight: 300;
+
+/* Style for "╨а╨░╨▒╨╛╤В╨░╨╡╨╝ ╤Б 10" */
+
+/* Style for "00" */
+
+/* Style for "+7 (981) 787 6" */
+color: rgb(255, 255, 255);
+font-family: "HelveticaNeueCyr";
+font-size: 24px;
+font-weight: 300;
+
+Закажи женские часы известной марки с огромной скикдой и бесплатной доставкой по СПб
+
+/* Style for закажи */
+color: rgb(255, 255, 255);
+font-family: "HelveticaNeueCyr";
+font-size: 60px;
+font-weight: 100;
+
+
+/* Base style */
+font-family: "HelveticaNeueCyr";
+
+/* Style for "Rado jubile Tr" */
+color: rgb(21, 138, 196);
+font-size: 36px;
+font-weight: 700;
+
+/* Style for стиль. доступный всем */
+color: rgb(255, 255, 255);
+font-size: 24px;
+font-weight: 100;
+
+/* Style for "2550 Р */
+color: rgb(255, 255, 255);
+font-family: "HelveticaNeueCyr";
+font-size: 45px;
+font-weight: 700;
+
+/* Style for кнопка */
+width: 296px;
+height: 67px;
+background-color: rgb(17, 147, 212);
+background-image: linear-gradient(to top, rgba(0, 0, 0, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%);
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+
+/* Style for оформить заказ */
+color: rgb(255, 255, 255);
+font-family: "HelveticaNeueCyr";
+font-size: 18px;
+font-weight: 300;
+
+/* Style for прямоугольник с часами
+opacity: 0.27;
+width: 201px;
+height: 202px;
+background-color: rgb(20, 20, 20);
+
+/* Style for hover gallery
+opacity: 0.35;
+width: 201px;
+height: 202px;
+border: 2px solid rgb(184, 246, 255);
+
+/* Style for почему стоит заказать часы у нас?
+color: rgb(46, 47, 49);
+font-family: "HelveticaNeueCyr";
+font-size: 60px;
+font-weight: 300;
+
+/* Style for не просто китай
+color: rgb(46, 47, 49);
+font-family: "HelveticaNeueCyr";
+font-size: 24px;
+
+/* Style for не просто китай
+color: rgb(46, 47, 49);
+font-family: "HelveticaNeueCyr";
+font-size: 24px;
+
+/* Style for при заказе часов
+color: rgb(46, 47, 49);
+font-family: "HelveticaNeueCyr";
+font-size: 18px;
+font-weight: 300;
+
+line #7f7f7f
+
+
+/* Style for цвет механизм
+color: rgb(100, 126, 133);
+font-family: "HelveticaNeueCyr";
+font-size: 24px;
+font-weight: 700;
+
+/* Style for белый черный
+color: rgb(51, 51, 51);
+font-family: "HelveticaNeueCyr";
+font-size: 24px;
+font-weight: 300;
+
+/* Style for table price
+color: rgb(51, 51, 51);
+font-size: 36px;
+font-weight: 300;
+
+/* Style for нет ответа 
+color: rgb(46, 47, 49);
+font-family: "HelveticaNeueCyr";
+font-size: 36px;
+font-weight: 300;
+
+/* Style for мы не берем предоплаты
+color: rgb(46, 47, 49);
+font-family: "HelveticaNeueCyr";
+font-size: 24px;
+font-weight: 100;
+
+/* Style for "1. заявка
+color: rgb(41, 155, 215);
+font-family: "HelveticaNeueCyr";
+font-size: 30px;
+font-weight: 500;
+
+footer f5f5f5
+
+/* Style for остались вопросы?
+color: rgb(46, 47, 49);
+font-family: "HelveticaNeueCyr";
+font-size: 30px;
+font-weight: 300;
+
+/* Style for "Watshop" */
+color: rgb(26, 142, 201);
+font-family: "HelveticaNeueCyr";
+font-size: 24px;
+font-weight: 300;
+
+line 7a7a7a
+
+/* Style for главная
+color: rgb(112, 119, 124);
+font-family: "HelveticaNeueCyr";
+font-size: 18px;
+font-weight: 300;
+
+/* Style for часовой магазин
+color: rgb(51, 51, 51);
+font-family: "HelveticaNeueCyr";
+font-size: 18px;
+font-weight: 300;
+
+/* работаем с 10 
+color: rgb(112, 119, 124);
+font-family: "HelveticaNeueCyr";
+font-size: 14px;
+font-weight: 300;
+
+/* Style for "+7 (981) 787 6" */
+color: rgb(26, 142, 201);
+font-family: "HelveticaNeueCyr";
+font-size: 24px;
+font-weight: 300;
+
+/* Style for мы в социальных сетях
+color: rgb(51, 51, 51);
+font-family: "HelveticaNeueCyr";
+font-size: 18px;
+font-weight: 300;
+
+/* Base style */
+color: rgb(51, 51, 51);
+font-family: "HelveticaNeueCyr";
+font-size: 18px;
+
+/* Style for "Watshop 2014-2" */
+font-weight: 300;
+
+/* Style for "Boroda " */
+font-weight: 700;
