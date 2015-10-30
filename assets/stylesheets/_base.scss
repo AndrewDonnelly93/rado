@@ -28,7 +28,7 @@ $watch-characteristics-w: 752px;
 $watch-characteristics-first-cell-w: 269px;
 $faq-watch-w: 347px;
 $faq-watch-h: 781px;
-$large-screen-w: 1920px;
+$large-screen-w: 1903px;
 $question-answer-max-w: 678px;
 $step-list-item-w: 380px;
 $step-list-last-item-w: 243px;
@@ -472,7 +472,7 @@ header {
     @media (min-width: $large-screen-w) {
       position: absolute;
       float: none;
-      right: - $faq-watch-w;
+      right: - 327px;
       top: 0;
     }
   }
