@@ -469,6 +469,7 @@ header {
     top: -36px;
     @include size($faq-watch-w,$faq-watch-h);
     background: url("../images/side-clock.png") 0 0 no-repeat;
+
     @media (min-width: $large-screen-w) {
       position: absolute;
       float: none;
