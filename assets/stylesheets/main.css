@@ -5,7 +5,6 @@
   src: url("../fonts/HelveticaNeueCyr-Bold.eot") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Bold.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'HelveticaNeueCyr-Light';
   src: url("../fonts/HelveticaNeueCyr-Light.eot") format("embedded-opentype");
@@ -13,7 +12,6 @@
   src: url("../fonts/HelveticaNeueCyr-Light.eot") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Light.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Light.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'HelveticaNeueCyr-Roman';
   src: url("../fonts/HelveticaNeueCyr-Roman.eot") format("embedded-opentype");
@@ -21,7 +19,6 @@
   src: url("../fonts/HelveticaNeueCyr-Roman.eot") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Roman.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Roman.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'HelveticaNeueCyr-Medium';
   src: url("../fonts/HelveticaNeueCyr-Medium.eot") format("embedded-opentype");
@@ -29,7 +26,6 @@
   src: url("../fonts/HelveticaNeueCyr-Medium.eot") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Medium.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Medium.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'HelveticaNeueCyr-Thin';
   src: url("../fonts/HelveticaNeueCyr-Thin.eot") format("embedded-opentype");
@@ -37,7 +33,6 @@
   src: url("../fonts/HelveticaNeueCyr-Thin.eot") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Thin.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Thin.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Thin.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 .how-we-work .steps-list li .step-name {
   display: block;
   overflow: hidden;
@@ -61,7 +56,7 @@ body {
   text-align: center;
   font-family: "HelveticaNeueCyr-Light", sans-serif;
   font-size: 18px;
-  color: white; }
+  color: #fff; }
 
 .max-wrapper {
   margin: 0 auto;
@@ -99,7 +94,7 @@ header {
     padding-top: 7px;
     margin-bottom: 9px;
     font-size: 24px;
-    color: white; }
+    color: #fff; }
 
 .text-block {
   color: #2e2f31;
@@ -143,12 +138,12 @@ header {
         display: block;
         color: #70777c; }
         .main-menu-container .main-menu li a:hover, .main-menu-container .main-menu li a.active {
-          color: white; }
+          color: #fff; }
 
 .big-header {
   font-family: "HelveticaNeueCyr-Thin", sans-serif;
   font-size: 60px;
-  color: white;
+  color: #fff;
   line-height: 1.2; }
 
 .middle-header {
@@ -165,7 +160,7 @@ header {
   text-align: center;
   line-height: 68px;
   font-size: 18px;
-  color: white; }
+  color: #fff; }
 
 .order {
   padding-top: 67px;
@@ -358,10 +353,10 @@ header {
     font-size: 24px;
     line-height: 1.2;
     color: #2e2f31; }
-    @media (min-width: 1920px) {
+    @media (min-width: 1903px) {
       .faq .questions-list {
         margin-top: 156px; } }
-    @media (min-width: 1920px) {
+    @media (min-width: 1903px) {
       .faq .questions-list {
         width: 100%; } }
     .faq .questions-list span {
@@ -383,7 +378,7 @@ header {
         padding-bottom: 36px; }
       .faq .questions-list li .answer {
         max-width: 678px; }
-      @media (min-width: 1920px) {
+      @media (min-width: 1903px) {
         .faq .questions-list li {
           margin-bottom: 112px; } }
       .faq .questions-list li:last-child {
@@ -395,11 +390,11 @@ header {
     width: 347px;
     height: 781px;
     background: url("../images/side-clock.png") 0 0 no-repeat; }
-    @media (min-width: 1920px) {
+    @media (min-width: 1903px) {
       .faq .watch-image {
         position: absolute;
         float: none;
-        right: -347px;
+        right: -327px;
         top: 0; } }
   .faq .block-wrapper {
     margin-bottom: 96px; }
@@ -489,7 +484,7 @@ header {
         background: url("../images/sprite/sprite.png") -155px -44px no-repeat; }
 
 footer {
-  background: whitesmoke;
+  background: #f5f5f5;
   padding-top: 79px;
   padding-bottom: 60px; }
   footer .menu-contacts-block {
@@ -560,3 +555,5 @@ footer {
         background-position: -94px -63px; }
       .social-network .social-list li .social-btn.fb {
         background-position: -50px -63px; }
+
+/*# sourceMappingURL=main.css.map */
