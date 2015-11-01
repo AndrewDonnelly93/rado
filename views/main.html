@@ -5,12 +5,6 @@
 	<title>Rado</title>
 	<link href="../assets/stylesheets/normalize.css" media="screen" rel="stylesheet" type="text/css">
 	<link href="../assets/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css">
-	<!--[if lte IE 9]>
-	<link href="../assets/stylesheets/ie9.css" rel="stylesheet" type="text/css"/>
-	<![endif]-->
-	<!--[if lte IE 8]>
-	<link href="../assets/stylesheets/ie8.css" rel="stylesheet" type="text/css"/>
-	<![endif]-->
 	<link rel="stylesheet" href="../assets/javascripts/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="../assets/javascripts/html5shiv.min.js"></script>
@@ -153,21 +147,25 @@
 	<section class="faq">
 		<div class="middle-wrapper">
 			<div class="middle-header">Ваши вопросы</div>
+		</div>
 			<article class="faq-container clearfix">
-				<ul class="questions-list clearfix">
-					<li>
-						<div class="question"><span>В:</span> Часы паленые?</div>
-						<div class="answer"><span>О:</span> Ну в какой-то степени да. Это реплика знаменитых часов.
-							Собраны в Китае. Однако механизм белгийский, что позволяет
-							часам служить вам максимально долго</div>
-					<li>
-						<div class="question"><span>В:</span> Доставка только по Санкт-Петербургу?</div>
-						<div class="answer"><span>О:</span> Бесплатная доставка действует по Санкт-Петербургу.
-							Доставка по ЛО платная, для того, чтобы узнать о тарифах
-							<a href="" class="send-request">оставьте заявку</a></div>
-				</ul>
+				<div class="middle-wrapper">
+					<ul class="questions-list clearfix">
+						<li>
+							<div class="question"><span>В:</span> Часы паленые?</div>
+							<div class="answer"><span>О:</span> Ну в какой-то степени да. Это реплика знаменитых часов.
+								Собраны в Китае. Однако механизм белгийский, что позволяет
+								часам служить вам максимально долго</div>
+						<li>
+							<div class="question"><span>В:</span> Доставка только по Санкт-Петербургу?</div>
+							<div class="answer"><span>О:</span> Бесплатная доставка действует по Санкт-Петербургу.
+								Доставка по ЛО платная, для того, чтобы узнать о тарифах
+								<a href="" class="send-request">оставьте заявку</a></div>
+					</ul>
+				</div>
 				<div class="watch-image"></div>
 			</article>
+		<div class="middle-wrapper">
 			<div class="block-wrapper">
 				<div class="text-block">Нет ответа на твой вопрос? Задай его здесь:</div><!--
 				--><a href="" class="btn">Задать свой вопрос</a>
@@ -237,11 +235,16 @@
 	</section>
 	<footer>
 			<div class="block-wrapper">
-				<div class="middle-text-block">
-					Остались вопросы?
-					Задайте их нашему менеджеру, оставьте заявку, и мы вам перезвоним!
-				</div><!--
-				--><a class="btn" href="">Оставить заявку</a>
+				<div class="inner-table-container">
+					<div class="middle-text-block">
+						Остались вопросы?
+						Задайте их нашему менеджеру, оставьте заявку, и мы вам перезвоним!
+					</div><!--
+					-->
+					<div class="btn-container">
+						<a class="btn" href="">Оставить заявку</a>
+					</div>
+				</div>
 			</div>
 			<div class="middle-wrapper"><div class="line"></div></div>
 			<section class="menu-contacts-block">

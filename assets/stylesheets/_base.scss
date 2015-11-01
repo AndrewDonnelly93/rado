@@ -73,6 +73,12 @@ header {
   padding-bottom: 31px;
 }
 
+header,
+section,
+footer {
+  width: 100%;
+}
+
 .watch-logo {
   float: left;
   @include size($watch-logo-size,$watch-logo-size);
@@ -416,7 +422,7 @@ header {
       margin-top: 156px;
     }
     float: left;
-    width: 830px;
+    width: 1000px;
     list-style: none;
     margin-bottom: 160px;
     @media (min-width: $large-screen-w) {
@@ -466,15 +472,11 @@ header {
   .watch-image {
     position: absolute;
     right: 0;
-    top: -36px;
+    top: 0;
     @include size($faq-watch-w,$faq-watch-h);
     background: url("../images/side-clock.png") 0 0 no-repeat;
-
-    @media (min-width: $large-screen-w) {
-      position: absolute;
-      float: none;
-      right: - 327px;
-      top: 0;
+    &.fixed {
+      position: fixed;
     }
   }
   .block-wrapper {
@@ -605,17 +607,20 @@ footer {
     background-position: -149px -103px;
   }
   .block-wrapper {
+    .inner-table-container {
+      display: table;
+      margin: 0 auto;
+    }
     .middle-text-block {
-      display: inline-block;
+      display: table-cell;
       text-align: right;
       max-width: 450px;
       vertical-align: top;
-      margin-right: 80px;
+      padding-right: 80px;
     }
-    .btn {
-      display: inline-block;
+    .btn-container {
+      display: table-cell;
       vertical-align: middle;
-      margin-top: 19px;
     }
     margin-bottom: 79px;
   }
