@@ -5,7 +5,6 @@
   src: url("../fonts/HelveticaNeueCyr-Bold.eot") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Bold.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'HelveticaNeueCyr-Light';
   src: url("../fonts/HelveticaNeueCyr-Light.eot") format("embedded-opentype");
@@ -13,7 +12,6 @@
   src: url("../fonts/HelveticaNeueCyr-Light.eot") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Light.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Light.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'HelveticaNeueCyr-Roman';
   src: url("../fonts/HelveticaNeueCyr-Roman.eot") format("embedded-opentype");
@@ -21,7 +19,6 @@
   src: url("../fonts/HelveticaNeueCyr-Roman.eot") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Roman.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Roman.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'HelveticaNeueCyr-Medium';
   src: url("../fonts/HelveticaNeueCyr-Medium.eot") format("embedded-opentype");
@@ -29,7 +26,6 @@
   src: url("../fonts/HelveticaNeueCyr-Medium.eot") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Medium.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Medium.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'HelveticaNeueCyr-Thin';
   src: url("../fonts/HelveticaNeueCyr-Thin.eot") format("embedded-opentype");
@@ -37,7 +33,6 @@
   src: url("../fonts/HelveticaNeueCyr-Thin.eot") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Thin.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Thin.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Thin.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 .how-we-work .steps-list li .step-name {
   display: block;
   overflow: hidden;
@@ -61,7 +56,7 @@ body {
   text-align: center;
   font-family: "HelveticaNeueCyr-Light", sans-serif;
   font-size: 18px;
-  color: white; }
+  color: #fff; }
 
 .max-wrapper {
   margin: 0 auto;
@@ -104,7 +99,7 @@ footer {
     padding-top: 7px;
     margin-bottom: 9px;
     font-size: 24px;
-    color: white; }
+    color: #fff; }
 
 .text-block {
   color: #2e2f31;
@@ -148,12 +143,12 @@ footer {
         display: block;
         color: #70777c; }
         .main-menu-container .main-menu li a:hover, .main-menu-container .main-menu li a.active {
-          color: white; }
+          color: #fff; }
 
 .big-header {
   font-family: "HelveticaNeueCyr-Thin", sans-serif;
   font-size: 60px;
-  color: white;
+  color: #fff;
   line-height: 1.2; }
 
 .middle-header {
@@ -170,7 +165,7 @@ footer {
   text-align: center;
   line-height: 68px;
   font-size: 18px;
-  color: white; }
+  color: #fff; }
 
 .order {
   padding-top: 67px;
@@ -197,7 +192,7 @@ footer {
       width: 263px;
       height: 83px;
       background: url("../images/rado.png") 0 0 no-repeat;
-      margin-bottom: 48px; }
+      margin-bottom: 43px; }
     .order .order-watch .watch-information .watch-name {
       color: #158ac4;
       margin-bottom: -1px;
@@ -214,7 +209,7 @@ footer {
       font-size: 45px;
       text-transform: uppercase;
       line-height: 1.2;
-      margin-bottom: 28px; }
+      margin-bottom: 30px; }
     .order .order-watch .watch-information .btn {
       display: inline-block; }
   .order .order-watch .watch-gallery {
@@ -365,7 +360,7 @@ footer {
     color: #2e2f31; }
     @media (min-width: 1903px) {
       .faq .questions-list {
-        margin-top: 156px; } }
+        margin-top: 138px; } }
     @media (min-width: 1903px) {
       .faq .questions-list {
         width: 100%; } }
@@ -385,12 +380,12 @@ footer {
         float: right; }
       .faq .questions-list li .question {
         max-width: 678px;
-        padding-bottom: 36px; }
+        padding-bottom: 38px; }
       .faq .questions-list li .answer {
         max-width: 678px; }
       @media (min-width: 1903px) {
         .faq .questions-list li {
-          margin-bottom: 112px; } }
+          margin-bottom: 115px; } }
       .faq .questions-list li:last-child {
         margin-bottom: 0; }
   .faq .watch-image {
@@ -404,6 +399,12 @@ footer {
       position: fixed; }
   .faq .block-wrapper {
     margin-bottom: 96px; }
+    @media (min-width: 1903px) {
+      .faq .block-wrapper {
+        position: relative;
+        top: -10px;
+        z-index: 2;
+        margin-bottom: 86px; } }
   .faq .text-block {
     display: inline-block;
     line-height: 67px; }
@@ -416,7 +417,7 @@ footer {
 .large-watch-gallery {
   width: 100%;
   margin-top: 84px;
-  margin-bottom: 109px; }
+  margin-bottom: 107px; }
   .large-watch-gallery .middle-header {
     margin-bottom: 90px; }
   .large-watch-gallery .large-watch-list {
@@ -440,7 +441,7 @@ footer {
   width: 380px;
   margin-right: 115px; }
   .how-we-work .steps-list li .step-name {
-    padding-bottom: 18px;
+    padding-bottom: 9px;
     width: 290px;
     color: #299bd7;
     font-family: "HelveticaNeueCyr-Medium", sans-serif;
@@ -464,7 +465,7 @@ footer {
 .how-we-work {
   text-align: center; }
   .how-we-work .middle-header {
-    margin-bottom: 70px; }
+    margin-bottom: 65px; }
   .how-we-work .small-text-block {
     margin: 0 auto 116px;
     max-width: 545px; }
@@ -472,7 +473,7 @@ footer {
     display: block;
     list-style: none;
     text-align: center;
-    margin-bottom: 31px; }
+    margin-bottom: 43px; }
     .how-we-work .steps-list li {
       text-align: left;
       display: inline-block;
@@ -490,15 +491,15 @@ footer {
         background: url("../images/sprite/sprite.png") -155px -44px no-repeat; }
 
 footer {
-  background: whitesmoke;
+  background: #f5f5f5;
   padding-top: 79px;
   padding-bottom: 60px; }
   footer .menu-contacts-block {
-    margin-top: 74px; }
+    margin-top: 76px; }
   footer .watch-logo {
     background-position: -149px -103px; }
   footer .block-wrapper {
-    margin-bottom: 79px; }
+    margin-bottom: 73px; }
     footer .block-wrapper .inner-table-container {
       display: table;
       margin: 0 auto; }
@@ -514,11 +515,11 @@ footer {
   footer .shop-name {
     float: left;
     text-align: left;
-    margin-left: 20px; }
+    margin-left: 13px; }
     footer .shop-name .name {
       color: #1a8ec9;
       font-size: 24px;
-      margin-bottom: 13px; }
+      margin-bottom: 8px; }
     footer .shop-name .description {
       color: #333333;
       font-size: 18px; }
@@ -526,22 +527,28 @@ footer {
     color: #70777c; }
     footer .main-menu-container .main-menu li a:hover, footer .main-menu-container .main-menu li a.active {
       color: black; }
-  footer .contacts .work-hours {
-    color: #70777c; }
-  footer .contacts .phone {
-    color: #1a8ec9; }
+  footer .contacts {
+    top: 4px; }
+    footer .contacts .work-hours {
+      color: #70777c; }
+    footer .contacts .phone {
+      padding-top: 6px;
+      color: #1a8ec9; }
   footer .social-network {
-    margin-top: 79px;
-    margin-bottom: 70px; }
+    margin-top: 47px;
+    margin-bottom: 66px; }
   footer .developers {
     color: #333333; }
-    footer .developers span {
-      font-family: "HelveticaNeueCyr-Bold", sans-serif; }
+    footer .developers a {
+      font-family: "HelveticaNeueCyr-Bold", sans-serif;
+      text-decoration: none;
+      color: #333333; }
 
 .social-network .social-description {
   display: inline-block;
-  margin-right: 30px;
-  padding-top: 10px;
+  margin-right: 17px;
+  position: relative;
+  top: -13px;
   color: #333333; }
 .social-network .social-list {
   display: inline-block; }
@@ -563,3 +570,5 @@ footer {
         background-position: -94px -63px; }
       .social-network .social-list li .social-btn.fb {
         background-position: -50px -63px; }
+
+/*# sourceMappingURL=main.css.map */

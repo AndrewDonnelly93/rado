@@ -215,7 +215,7 @@ footer {
         right: -1px;
         @include size($manufacturer-logo-w,$manufacturer-logo-h);
         background: url("../images/rado.png") 0 0 no-repeat;
-        margin-bottom: 48px;
+        margin-bottom: 43px;
       }
       .watch-name {
         color: $blue;
@@ -241,7 +241,7 @@ footer {
         }
         text-transform: uppercase;
         line-height: 1.2;
-        margin-bottom: 28px;
+        margin-bottom: 30px;
       }
       .btn {
         display: inline-block;
@@ -419,7 +419,7 @@ footer {
   .questions-list {
     margin-top: 176px;
     @media (min-width: $large-screen-w) {
-      margin-top: 156px;
+      margin-top: 138px;
     }
     float: left;
     width: 1000px;
@@ -455,14 +455,14 @@ footer {
       }
       .question {
         max-width: $question-answer-max-w;
-        padding-bottom: 36px;
+        padding-bottom: 38px;
       }
       .answer {
         max-width: $question-answer-max-w;
       }
       margin-bottom: 125px;
       @media (min-width: $large-screen-w) {
-        margin-bottom: 112px;
+        margin-bottom: 115px;
       }
       &:last-child {
         margin-bottom: 0;
@@ -481,6 +481,12 @@ footer {
   }
   .block-wrapper {
     margin-bottom: 96px;
+    @media (min-width: $large-screen-w) {
+      position: relative;
+      top: -10px;
+      z-index: 2;
+      margin-bottom: 86px;
+    }
   }
   .text-block {
     display: inline-block;
@@ -497,7 +503,7 @@ footer {
 .large-watch-gallery {
   width: 100%;
   margin-top: 84px;
-  margin-bottom: 109px;
+  margin-bottom: 107px;
   .middle-header {
     margin-bottom: 90px;
   }
@@ -526,7 +532,7 @@ footer {
   margin-right: 115px;
   .step-name {
     @extend %text-overflow;
-    padding-bottom: 18px;
+    padding-bottom: 9px;
     width: $step-list-item-max-text-w;
     color: $dark-blue;
     font: {
@@ -559,7 +565,7 @@ footer {
 .how-we-work {
   text-align: center;
   .middle-header {
-    margin-bottom: 70px;
+    margin-bottom: 65px;
   }
   .small-text-block {
     margin: 0 auto 116px;
@@ -592,7 +598,7 @@ footer {
         @extend %step-last;
       }
     }
-    margin-bottom: 31px;
+    margin-bottom: 43px;
   }
 }
 
@@ -601,7 +607,7 @@ footer {
   padding-top: 79px;
   padding-bottom: 60px;
   .menu-contacts-block {
-    margin-top: 74px;
+    margin-top: 76px;
   }
   .watch-logo {
     background-position: -149px -103px;
@@ -622,16 +628,16 @@ footer {
       display: table-cell;
       vertical-align: middle;
     }
-    margin-bottom: 79px;
+    margin-bottom: 73px;
   }
   .shop-name {
     float: left;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 13px;
     .name {
       color: $middle-blue;
       font-size: 24px;
-      margin-bottom: 13px;
+      margin-bottom: 8px;
     }
     .description {
       color: $dark-black;
@@ -652,23 +658,27 @@ footer {
     }
   }
   .contacts {
+    top: 4px;
     .work-hours {
       color: $light-gray;
     }
     .phone {
+      padding-top: 6px;
       color: $middle-blue;
     }
   }
   .social-network {
-    margin-top: 79px;
-    margin-bottom: 70px;
+    margin-top: 47px;
+    margin-bottom: 66px;
   }
   .developers {
     color: $dark-black;
-    span {
+    a {
       font: {
         family: "HelveticaNeueCyr-Bold", sans-serif;
       }
+      text-decoration: none;
+      color: $dark-black;
     }
   }
 }
@@ -676,8 +686,9 @@ footer {
 .social-network {
   .social-description {
     display: inline-block;
-    margin-right: 30px;
-    padding-top: 10px;
+    margin-right: 17px;
+    position: relative;
+    top: -13px;
     color: $dark-black;
   }
   .social-list {
