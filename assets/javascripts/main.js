@@ -67,9 +67,29 @@ $(function() {
   });
 
   if ($(".watch-gallery").length && $(".watch-pic").length) {
-    var gallery = ".watch-gallery";
-    var watchPic = ".watch-pic";
     openWatchGallery();
+  }
+
+  if ($(":input[placeholder]").length) {
+    $(":input[placeholder]").placeholder();
+  }
+
+  if ($(".send-form").length && $(".send-contacts").length) {
+    $(".send-form").on("click", function (e) {
+      $(this).parents("body").find(".overlay").addClass("active");
+      $(this).parents("body").find(".send-contacts").addClass("active");
+      e.preventDefault();
+    });
+
+    $(".close-icon").on("click",function() {
+      $(this).parents(".send-contacts").removeClass("active");
+      $(this).parents("body").find(".overlay").removeClass("active");
+    });
+
+    $(".overlay").on("click",function() {
+      $(this).parents("body").find(".send-contacts").removeClass("active");
+      $(this).parents("body").find(".overlay").removeClass("active");
+    });
   }
 
 });

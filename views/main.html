@@ -3,8 +3,12 @@
 <head lang="en">
 	<meta charset="UTF-8">
 	<title>Watchshop: Магазин часов</title>
-	<link href="../assets/stylesheets/normalize.css" media="screen" rel="stylesheet" type="text/css">
-	<link href="../assets/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="../assets/images/icon.ico" type="image/x-icon">
+	<link href="../assets/stylesheets/normalize.css" media="screen" rel="stylesheet">
+	<link href="../assets/stylesheets/main.css" media="screen" rel="stylesheet">
+	<!--[if lte IE 8]>
+	<link href="../assets/stylesheets/ie8.css" media="screen" rel="stylesheet">
+	<![endif]-->
 	<link rel="stylesheet" href="../assets/javascripts/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="../assets/javascripts/html5shiv.min.js"></script>
@@ -13,8 +17,10 @@
 	<script src="../assets/javascripts/css3-mediaqueries.min.js"></script>
 	<script src="../assets/javascripts/selectivizr-min.js"></script>
 	<![endif]-->
+	<script src="../assets/javascripts/jquery.placeholder.min.js"></script>
 </head>
 <body id="main">
+<div class="overlay"></div>
 	<header>
 		<section class="menu-contacts-block">
 			<div class="max-wrapper clearfix">
@@ -26,10 +32,12 @@
 				<nav class="main-menu-container">
 					<ul class="main-menu">
 						<li><a href="#main">Главная</a>
+						<li><a href="#order">Заказ</a>
 						<li><a href="#advantages">Преимущества</a>
+						<li><a href="#characteristics">Характеристики</a>
 						<li><a href="#faq">Вопросы</a>
-						<li><a href="#advantages">Преимущества</a>
-						<li><a href="#faq">Вопросы</a>
+						<li><a href="#gallery">Галерея</a>
+						<li><a href="#how-we-work">Как мы работаем</a>
 					</ul>
 				</nav>
 				<div class="contacts">
@@ -39,7 +47,7 @@
 			</div>
 		</section>
 	</header>
-	<section class="order">
+	<section class="order" id="order">
 		<div class="middle-wrapper">
 		<div class="big-header">Закажи женские часы известной марки с огромной скикдой и
 			бесплатной доставкой по СПб</div>
@@ -50,22 +58,22 @@
 				<div class="watch-name">Rado jubile True</div>
 				<div class="watch-description">Стиль доступный всем</div>
 				<div class="watch-price">2550 Р</div>
-				<a href="" class="btn">Оформить заказ</a>
+				<a href="#" class="btn send-form">Оформить заказ</a>
 			</div>
 			<ul class="watch-gallery">
 				<li class="active">
 				<a href="#">
-					<img src="../assets/images/black-clock.png" alt="watch" data-image="images/black-clock.png"/>
+					<img src="../assets/images/black-clock.png" alt="watch" data-image="images/big-black-clock.png"/>
 				</a>
 				<li>
 				<a href="#">
-					<img src="../assets/images/white-clock.png" data-image="images/white-clock.png" alt="watch" />
+					<img src="../assets/images/white-clock.png" data-image="images/big-white-clock.png" alt="watch" />
 				</a>
 			</ul>
 		</article>
 		</div>
 	</section>
-	<section class="advantages">
+	<section class="advantages" id="advantages">
 		<div class="middle-wrapper">
 			<div class="middle-header">Почему стоит<br>
 				заказать часы у нас?</div>
@@ -95,7 +103,7 @@
 			<div class="line"></div>
 		</div>
 	</section>
-	<section class="watch-details">
+	<section class="watch-details" id="characteristics">
 		<div class="middle-wrapper">
 			<div class="middle-header">Часы Rado True</div>
 			<div class="watch-details-container clearfix">
@@ -143,7 +151,7 @@
 						<td class="price">2550 р</td>
 					</tr>
 				</table>
-				<a href="" class="btn">Оформить заказ</a>
+				<a href="#" class="btn send-form">Оформить заказ</a>
 			</div>
 			<div class="line"></div>
 		</div>
@@ -182,12 +190,12 @@
 		<div class="middle-wrapper">
 			<div class="block-wrapper">
 				<div class="text-block">Нет ответа на твой вопрос? Задай его здесь:</div><!--
-				--><a href="" class="btn">Задать свой вопрос</a>
+				--><a href="" class="btn send-form">Задать свой вопрос</a>
 			</div>
 			<div class="line"></div>
 		</div>
 	</section>
-	<section class="large-watch-gallery">
+	<section class="large-watch-gallery" id="gallery">
 		<div class="middle-header">Фотографии наших клиентов</div>
 		<ul class="large-watch-list">
 			<li>
@@ -216,7 +224,7 @@
 				</a>
 		</ul>
 	</section>
-	<section class="how-we-work" id="advantages">
+	<section class="how-we-work" id="how-we-work">
 		<div class="middle-wrapper">
 			<div class="middle-header">Как мы работаем</div>
 			<div class="small-text-block">
@@ -254,9 +262,8 @@
 						Остались вопросы?
 						Задайте их нашему менеджеру, оставьте заявку, и мы вам перезвоним!
 					</div><!--
-					-->
-					<div class="btn-container">
-						<a class="btn" href="">Оставить заявку</a>
+					--><div class="btn-container">
+						<a class="btn send-form" href="#">Оставить заявку</a>
 					</div>
 				</div>
 			</div>
@@ -271,10 +278,12 @@
 					<nav class="main-menu-container">
 						<ul class="main-menu">
 							<li><a href="#main">Главная</a>
+							<li><a href="#order">Заказ</a>
 							<li><a href="#advantages">Преимущества</a>
+							<li><a href="#characteristics">Характеристики</a>
 							<li><a href="#faq">Вопросы</a>
-							<li><a href="#advantages">Преимущества</a>
-							<li><a href="#faq">Вопросы</a>
+							<li><a href="#gallery">Галерея</a>
+							<li><a href="#how-we-work">Как мы работаем</a>
 						</ul>
 					</nav>
 					<div class="contacts">
@@ -292,6 +301,20 @@
 				</ul>
 			</section>
 	</footer>
+	<form action="" class="send-contacts" method="post" id="contacts-form">
+		<div class="close-icon"></div>
+		<div class="form-wrapper">
+			<div class="form-header">Оставьте заявку и мы<br>
+				вам перезвоним</div>
+			<input type="text" name="name" placeholder="Ваше имя">
+			<input type="text" name="phone" placeholder="Ваш телефон">
+			<input type="submit" name="submit" value="Отправить">
+			<div class="notice">
+				Мы не будем использовать ваш телефон для рекламных рассы-<br>
+				лок, так же не будем передавть его третьим лицам
+			</div>
+		</div>
+	</form>
 	<script src="../assets/javascripts/fancybox/source/jquery.fancybox.pack.js"></script>
 	<script src="../assets/javascripts/main.js"></script>
 </body>

@@ -1,5 +1,6 @@
 $max-wrapper-w: 1349px;
 $middle-wrapper-w: 1234px;
+$screen-1280: 1280px;
 $black: #2e2f31;
 $dark-black: rgb(51, 51, 51);
 $light-gray: rgb(112, 119, 124);
@@ -36,6 +37,12 @@ $step-list-item-max-text-w: 290px;
 $step-arrow-w: 21px;
 $step-arrow-h: 38px;
 $social-list-item-size: 42px;
+$contacts-form-w: 425px;
+$contacts-form-wrapper-w: 371px;
+$form-gray: rgb(153, 153, 153);
+$form-input-h: 58px;
+$form-input-bg: rgb(247, 247, 247);
+$form-blue: rgb(19, 165, 237);
 
 * {
   margin: 0;
@@ -47,6 +54,10 @@ body {
   min-height: 100vh;
   position: relative;
   min-width: $max-wrapper-w;
+  @media (max-width: $screen-1280) {
+    min-width: 100%;
+    overflow-x: hidden;
+  }
   text-align: center;
   font: {
     family: "HelveticaNeueCyr-Light", sans-serif;
@@ -55,9 +66,27 @@ body {
   color: $base-color;
 }
 
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  background: #000;
+  background: rgba(#000,.5);
+  &.active {
+    display: block;
+  }
+}
+
 .max-wrapper {
   margin: 0 auto;
   width: $max-wrapper-w;
+  @media (max-width: $screen-1280) {
+    width: $screen-1280 - 35;
+  }
   position: relative;
 }
 
@@ -74,7 +103,7 @@ header {
   &.fixed {
     position: fixed;
     top: 0;
-    z-index: 5;
+    z-index: 4;
   }
 }
 
@@ -150,7 +179,10 @@ footer {
     margin: 0 auto;
     li {
       display: inline-block;
-      padding-right: 52px;
+      padding-right: 36px;
+      @media (max-width: $screen-1280) {
+        padding-right: 20px;
+      }
       padding-bottom: 10px;
       &:last-child {
         padding-right: 0;
@@ -206,9 +238,12 @@ footer {
   }
   .order-watch {
     .watch-pic {
+      @media (max-width: $screen-1280) {
+        margin-left: 20px;
+      }
       float: left;
       @include size($big-watch-w,$big-watch-h);
-      background: url("../images/clock.png") 0 0 no-repeat;
+      background: url("../images/big-black-clock.png") 0 0 no-repeat;
       margin-right: 96px;
       background-size: contain;
     }
@@ -255,6 +290,9 @@ footer {
     }
     .watch-gallery {
       float: right;
+      @media (max-width: $screen-1280) {
+        margin-right: 20px;
+      }
       width: $gallery-clock-square-w;
       li {
         display: block;
@@ -426,6 +464,9 @@ footer {
     margin-top: 138px;
     float: left;
     width: 1000px;
+    @media (max-width: $screen-1280) {
+      width: 970px;
+    }
     list-style: none;
     margin-bottom: 160px;
     @media (min-width: $large-screen-w) {
@@ -730,3 +771,87 @@ footer {
   }
 }
 
+.send-contacts,
+.landing-form {
+  background: #fff;
+  z-index: 10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  @include transform(translate(-50%,-50%));
+  &.active {
+    display: block;
+  }
+  .close-icon {
+    right: 0;
+    top: -32px;
+    position: absolute;
+    width: 17px;
+    height: 13px;
+    background: url("../images/sprite/close-icon.png") 0 0 no-repeat;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  text-align: center;
+  display: none;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  width: $contacts-form-w;
+  .form-wrapper {
+    width: $contacts-form-wrapper-w;
+    position: relative;
+    margin: 0 auto;
+  }
+  .form-header {
+    margin: 0 auto 36px;
+    max-width: 272px;
+    line-height: 1.2;
+    color: #000;
+    font: {
+      family: "HelveticaNeueCyr-Light", sans-serif;
+      size: 24px;
+    }
+  }
+  input[type=text] {
+    border: 0;
+    text-align: left;
+    font: {
+      family: "HelveticaNeueCyr-Light", sans-serif;
+      size: 18px;
+    }
+    padding-left: 15px;
+    height: $form-input-h;
+    line-height: normal;
+    position: relative;
+    z-index: 2;
+    @include border-box;
+    color: $form-gray;
+    @include placeholder($form-gray);
+    background: $form-input-bg;
+    width: 100%;
+    margin-bottom: 18px;
+  }
+  input[type=submit] {
+    width: 100%;
+    display: block;
+    margin-top: 26px;
+    margin-bottom: 25px;
+    font: {
+      family: "HelveticaNeueCyr-Light", sans-serif;
+      size: 18px;
+    }
+    color: $base-color;
+    line-height: normal;
+    height: $form-input-h;
+    background: $form-blue;
+  }
+  .notice {
+    line-height: 1.2;
+    font: {
+      family: "HelveticaNeueCyr-Roman", sans-serif;
+      size: 12px;
+    }
+    color: $form-gray;
+  }
+}

@@ -1,0 +1,11 @@
+body {
+  &:before {
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+  }
+}
+
+.send-contacts,
+.landing-form {
+  margin-top: -223px;
+  margin-left: -112px;
+}

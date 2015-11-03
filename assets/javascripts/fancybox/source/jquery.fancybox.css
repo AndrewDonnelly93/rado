@@ -107,6 +107,12 @@
 	z-index: 8040;
 }
 
+.fancybox-close.custom-close {
+	width: 18px;
+	height: 15px;
+	background-position: -12px -162px;
+}
+
 .fancybox-nav {
 	position: absolute;
 	top: 0;
