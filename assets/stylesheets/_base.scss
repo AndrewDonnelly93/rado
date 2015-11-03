@@ -283,6 +283,16 @@ footer {
         text-transform: uppercase;
         line-height: 1.2;
         margin-bottom: 30px;
+        position: relative;
+        .rub {
+          position: relative;
+          &:before {
+            position: absolute;
+            top: -10px;
+            left: 0;
+            content: "_";
+          }
+        }
       }
       .btn {
         display: inline-block;
@@ -442,6 +452,15 @@ footer {
       &.price {
         font-size: 36px;
         text-transform: uppercase;
+        .rub {
+          position: relative;
+          &:before {
+            position: absolute;
+            top: -10px;
+            left: 0;
+            content: "_";
+          }
+        }
       }
     }
   }

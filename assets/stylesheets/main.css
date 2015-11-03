@@ -266,7 +266,15 @@ footer {
       font-size: 45px;
       text-transform: uppercase;
       line-height: 1.2;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      position: relative; }
+      .order .order-watch .watch-information .watch-price .rub {
+        position: relative; }
+        .order .order-watch .watch-information .watch-price .rub:before {
+          position: absolute;
+          top: -10px;
+          left: 0;
+          content: "_"; }
     .order .order-watch .watch-information .btn {
       display: inline-block; }
   .order .order-watch .watch-gallery {
@@ -397,6 +405,13 @@ footer {
       .watch-details .watch-characteristics td.price {
         font-size: 36px;
         text-transform: uppercase; }
+        .watch-details .watch-characteristics td.price .rub {
+          position: relative; }
+          .watch-details .watch-characteristics td.price .rub:before {
+            position: absolute;
+            top: -10px;
+            left: 0;
+            content: "_"; }
   .watch-details .btn {
     float: right;
     margin-right: 458px;
