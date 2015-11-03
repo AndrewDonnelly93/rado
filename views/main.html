@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
 	<meta charset="UTF-8">
-	<title>Rado</title>
+	<title>Watchshop: Магазин часов</title>
 	<link href="../assets/stylesheets/normalize.css" media="screen" rel="stylesheet" type="text/css">
 	<link href="../assets/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="../assets/javascripts/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
@@ -14,11 +14,15 @@
 	<script src="../assets/javascripts/selectivizr-min.js"></script>
 	<![endif]-->
 </head>
-<body>
-	<header id="main">
+<body id="main">
+	<header>
 		<section class="menu-contacts-block">
 			<div class="max-wrapper clearfix">
 				<div class="watch-logo"></div>
+				<div class="shop-name">
+					<div class="name">Watchshop</div>
+					<div class="description">Часовой магазин</div>
+				</div>
 				<nav class="main-menu-container">
 					<ul class="main-menu">
 						<li><a href="#main">Главная</a>
@@ -49,13 +53,13 @@
 				<a href="" class="btn">Оформить заказ</a>
 			</div>
 			<ul class="watch-gallery">
-				<li>
-				<a class="fancybox" rel="gallery1" href="../assets/images/black-clock.png">
-					<img src="../assets/images/black-clock.png" alt="watch" />
+				<li class="active">
+				<a href="#">
+					<img src="../assets/images/black-clock.png" alt="watch" data-image="images/black-clock.png"/>
 				</a>
 				<li>
-				<a class="fancybox" rel="gallery1" href="../assets/images/white-clock.png">
-					<img src="../assets/images/white-clock.png" alt="watch" />
+				<a href="#">
+					<img src="../assets/images/white-clock.png" data-image="images/white-clock.png" alt="watch" />
 				</a>
 			</ul>
 		</article>
@@ -287,8 +291,6 @@
 					<li><a class="social-btn vk" href=""></a>
 				</ul>
 			</section>
-			<div class="developers">Watshop 2014-2015 &copy; сайт разработан
-				компанией <a href="">Boroda</a></div>
 	</footer>
 	<script src="../assets/javascripts/fancybox/source/jquery.fancybox.pack.js"></script>
 	<script src="../assets/javascripts/main.js"></script>

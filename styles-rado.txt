@@ -1,3 +1,10 @@
+27 и 41
+
+300 - light
+100 - thin
+500 - medium
+700 - bold
+mw964
 header #2e2f31
 /* Base style */
 font-family: "HelveticaNeueCyr";
@@ -104,14 +111,22 @@ font-size: 18px;
 font-weight: 300;
 
 line #7f7f7f
-
+rgb(51, 51, 51);
 
 /* Style for цвет механизм
 color: rgb(100, 126, 133);
 font-family: "HelveticaNeueCyr";
 font-size: 24px;
 font-weight: 700;
+Белый, Черный
+Кварцевые, унисекс
 
+Бельгия
+Износостойкий, Металический
+Часы, Минуты, Секунды, Дата
+44 мм
+39 мм
+12 мм
 /* Style for белый черный
 color: rgb(51, 51, 51);
 font-family: "HelveticaNeueCyr";
@@ -122,6 +137,8 @@ font-weight: 300;
 color: rgb(51, 51, 51);
 font-size: 36px;
 font-weight: 300;
+
+
 
 /* Style for нет ответа 
 color: rgb(46, 47, 49);
@@ -197,3 +214,72 @@ font-weight: 300;
 
 /* Style for "Boroda " */
 font-weight: 700;
+
+box-shadow: -2px 3.5px 6px rgba(0, 0, 0, 0.3);
+
+/* Style for box */
+width: 68px;
+height: 45px;
+background-color: rgb(54, 62, 72);
+
+image frame 
+box-shadow: inset 0 0 0 rgba(0, 244, 253, 0.18);
+
+/* Style for "play now" */
+color: rgb(46, 16, 0);
+font-family: "Russo One";
+font-size: 9px;
+font-weight: 400;
+text-transform: uppercase;
+
+/* Base style */
+font-family: "Jura";
+font-size: 14px;
+font-weight: 600;
+text-transform: uppercase;
+
+/* Style for в игре " */
+color: rgb(255, 255, 255);
+
+/* Style for "dracula" */
+color: rgb(2, 222, 65);
+
+/* Style for "0,00 Р */
+color: rgb(255, 83, 0);
+
+в игре dracula игрок Test_user выиграл 0,00 р
+
+function setPositionToWatch(watchSection, watch, largeScreen) {
+  var watchSectionTopOffset = $(watchSection).offset().top;
+  var nextSiblingTopOffset = $(watchSection).next().offset().top;
+  $(document).on("scroll",function() {
+    if (($(this).scrollTop() >= watchSectionTopOffset)
+      && ($(this).scrollTop() <= nextSiblingTopOffset)) {
+      var largeScreenMatches = window.matchMedia("screen and (min-width:"+largeScreen+")");
+      if (largeScreenMatches.matches) {
+
+      } else {
+
+      }
+    }
+  });
+}
+
+$(function() {
+
+  $(".fancybox").fancybox({
+    openEffect	: 'none',
+    closeEffect	: 'none'
+  });
+
+  if ($(".faq-container").length && $(".watch-image").length) {
+    var watchSection = ".faq-container";
+    var watch = ".watch-image";
+    var largeScreen = 1903;
+    setPositionToWatch(watchSection, watch, largeScreen);
+    $(window).resize(function () {
+      setPositionToWatch(watchSection, watch, largeScreen);
+    });
+  }
+
+});

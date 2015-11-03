@@ -10,7 +10,7 @@ $big-watch-w: 240px;
 $big-watch-h: 580px;
 $manufacturer-logo-w: 263px;
 $manufacturer-logo-h: 83px;
-$blue: rgb(21, 138, 196);
+$blue: #2CB9FF;
 $middle-blue: rgb(26, 142, 201);
 $dark-blue: rgb(41, 155, 215);
 $btn-w: 296px;
@@ -71,6 +71,11 @@ header {
   background: $black;
   padding-top: 26px;
   padding-bottom: 31px;
+  &.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+  }
 }
 
 header,
@@ -166,7 +171,7 @@ footer {
 .big-header {
   font: {
     family: "HelveticaNeueCyr-Thin", sans-serif;
-    size: 60px;
+    size: 50px;
   }
   color: $base-color;
   line-height: 1.2;
@@ -174,7 +179,7 @@ footer {
 
 .middle-header {
   color: $black;
-  font-size: 60px;
+  font-size: 50px;
   line-height: 1.2;
 }
 
@@ -205,6 +210,7 @@ footer {
       @include size($big-watch-w,$big-watch-h);
       background: url("../images/clock.png") 0 0 no-repeat;
       margin-right: 96px;
+      background-size: contain;
     }
     .watch-information {
       float: left;
@@ -267,7 +273,7 @@ footer {
           content: "";
           display: block;
         }
-        &:hover {
+        &:hover, &.active {
           background: rgba(20, 20, 20, .35);
           &:before {
             border: 2px solid rgb(184, 246, 255);
@@ -383,8 +389,8 @@ footer {
     text-align: left;
     td {
       line-height: 1.2;
-      font-size: 24px;
-      padding-bottom: 32px;
+      font-size: 18px;
+      padding-bottom: 22px;
       &:first-child {
         width: $watch-characteristics-first-cell-w;
         color: $gray;
@@ -417,10 +423,7 @@ footer {
     position: relative;
   }
   .questions-list {
-    margin-top: 176px;
-    @media (min-width: $large-screen-w) {
-      margin-top: 138px;
-    }
+    margin-top: 138px;
     float: left;
     width: 1000px;
     list-style: none;
@@ -430,7 +433,7 @@ footer {
     }
     font: {
       family: "HelveticaNeueCyr-Thin", sans-serif;
-      size: 24px;
+      size: 18px;
     }
     line-height: 1.2;
     color: $black;
@@ -455,15 +458,12 @@ footer {
       }
       .question {
         max-width: $question-answer-max-w;
-        padding-bottom: 38px;
+        padding-bottom: 28px;
       }
       .answer {
         max-width: $question-answer-max-w;
       }
-      margin-bottom: 125px;
-      @media (min-width: $large-screen-w) {
-        margin-bottom: 115px;
-      }
+      margin-bottom: 105px;
       &:last-child {
         margin-bottom: 0;
       }
@@ -477,6 +477,10 @@ footer {
     background: url("../images/side-clock.png") 0 0 no-repeat;
     &.fixed {
       position: fixed;
+    }
+    &.absolute {
+      bottom: 0;
+      top: auto;
     }
   }
   .block-wrapper {
@@ -602,6 +606,21 @@ footer {
   }
 }
 
+.shop-name {
+  float: left;
+  text-align: left;
+  margin-left: 13px;
+  .name {
+    color: $base-color;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .description {
+    color: $light-gray;
+    font-size: 18px;
+  }
+}
+
 footer {
   background: $footer-bg;
   padding-top: 79px;
@@ -631,17 +650,11 @@ footer {
     margin-bottom: 73px;
   }
   .shop-name {
-    float: left;
-    text-align: left;
-    margin-left: 13px;
     .name {
       color: $middle-blue;
-      font-size: 24px;
-      margin-bottom: 8px;
     }
     .description {
       color: $dark-black;
-      font-size: 18px;
     }
   }
   .main-menu-container {
@@ -669,7 +682,6 @@ footer {
   }
   .social-network {
     margin-top: 47px;
-    margin-bottom: 66px;
   }
   .developers {
     color: $dark-black;

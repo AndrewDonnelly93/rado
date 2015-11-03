@@ -1,29 +1,40 @@
 function setPositionToWatch(watchSection, watch, largeScreen) {
-  var watchSectionTopOffset = $(watchSection).parent().offset().top;
+  var watchSectionTopOffset = $(watchSection).parent(".faq").offset().top;
   console.log(watchSectionTopOffset);
-
+  var watchSectionHeight = $(watchSection).innerHeight();
+  var headerHeight =  $("header").innerHeight();
   var watchHeight = $(watch).height();
   var nextSiblingTopOffset = $(watchSection).next().offset().top;
-  console.log(nextSiblingTopOffset);
+  console.log( watchSectionHeight);
   $(document).on("scroll",function() {
-    var largeScreenMatches = (window.matchMedia("screen and (min-width:" + largeScreen + "px"));
-    if (largeScreenMatches.matches) {
-      if (($(this).scrollTop() >= watchSectionTopOffset)
-          && ($(this).scrollTop() <= (nextSiblingTopOffset - watchHeight + 300))) {
-        $(watch).addClass("fixed");
+    if ($(this).scrollTop() >= 100) {
+      $("header").addClass("fixed");
+    } else {
+      $("header").removeClass("fixed");
+    }
+    if (($(this).scrollTop() >= watchSectionTopOffset - 2 * headerHeight)
+      && ($(this).scrollTop() <= nextSiblingTopOffset)) {
+      if ($(this).scrollTop() <= (nextSiblingTopOffset - watchHeight + headerHeight)) {
+        $(watch).addClass("fixed").removeClass("absolute").css("top",headerHeight);
       } else {
-        $(watch).removeClass("fixed");
+        $(watch).removeClass("fixed").addClass("absolute").css("top","");
       }
     } else {
-      if (($(this).scrollTop() >= watchSectionTopOffset)
-          && ($(this).scrollTop() <= (nextSiblingTopOffset - watchHeight))) {
-        $(watch).addClass("fixed");
-      } else {
-        $(watch).removeClass("fixed");
-      }
+        $(watch).removeClass("fixed").removeClass("absolute").css("top","");
     }
   });
 }
+
+function openWatchGallery () {
+  $(".watch-gallery").find("a").on("click",function(e) {
+    var picRef = "url(../assets/"+ $(this).find("img").data("image") + ")";
+    $(this).parents(".watch-gallery").find("li").removeClass("active");
+    $(this).parents("li").addClass("active");
+    $(this).parents(".order-watch").find(".watch-pic").css("background-image",picRef);
+    e.preventDefault();
+  });
+}
+
 
 $(function() {
 
@@ -54,5 +65,11 @@ $(function() {
       }
     }
   });
+
+  if ($(".watch-gallery").length && $(".watch-pic").length) {
+    var gallery = ".watch-gallery";
+    var watchPic = ".watch-pic";
+    openWatchGallery();
+  }
 
 });
